@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="2" parallel="methods" name="Failed suite [All Test Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="2" parallel="methods" name="regression(failed)">
+    <groups>
+      <run>
+        <include name="smoke"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="tests.GoogleTest">
+        <methods>
+          <include name="search"/>
+        </methods>
+      </class> <!-- tests.GoogleTest -->
+    </classes>
+  </test> <!-- regression(failed) -->
+</suite> <!-- Failed suite [All Test Suite] -->
